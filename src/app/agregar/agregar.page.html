@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>agregar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+
+    <ion-item>
+      <ion-label color="primary">Titulo</ion-label>
+      <ion-input [(ngModel)]="notas.titulo" type="text" placeholder="titulo de la noticia"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary">nombre</ion-label>
+      <ion-textarea [(ngModel)]="notas.name" placeholder="ingresar descripcion"></ion-textarea>>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary">descripcion</ion-label>
+      <ion-textarea [(ngModel)]="notas.descripcion" placeholder="ingresar descripcion"></ion-textarea>>
+    </ion-item>
+  </ion-list>
+  <ion-button (click)="agreganota()" color="primary">
+    Guardar
+  </ion-button>
+</ion-content>
